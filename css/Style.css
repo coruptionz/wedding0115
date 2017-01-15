@@ -3,6 +3,7 @@ body{
 }
 h1 {
   padding-left: 20px;
+
 }
 
 /*<-----------------------------carouse--------------------------------
@@ -23,7 +24,7 @@ h1 {
 
 
 /*------------------------------Caption------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#h1Format{
+.h1Format{
 	font-size: 36px;
 }
 
@@ -229,7 +230,7 @@ section#timeline article:nth-child(7) div.inner h2:after {
   -o-animation: flash 3s infinite;
 }
 
-/*----------------------------------------------------------------------------------------------------------------Photo Gallery---------------------------------------------------------------------------------*/
+
 
 
 
@@ -629,124 +630,190 @@ figcaption {
 #photo{
   background-image: url("../img/albumbg.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   margin-top: 60px;
- 
-  height: 560px;
+  height: 600px;
 }
 
 
 
 
 /*----------------------------------------------Reception-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-#reception {
-height: 740px;
-width: 100%;
-margin: 0;
-padding: 0;
-background-color: #BDC3C7;
-font-family: 'Raleway';
-}
 
-.top {
-  background-color: #264356;
-  height: 200px;
-  margin:0;
-  padding:0;
-  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
-}
-
-.form {
-  height: 590px;
-  width: 400px;
-  background-color: #fff;
-  margin: -110px auto;
-  border-radius: 10px;
-  color: #666;
-  padding: 0px 0px;
-  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
-}
-
-#reception .info {
-  padding: 10px;
-}
-
-#reception h1, 
-#reception h2, 
-#reception p {
-  text-align: center;
-  padding: 0px;
-  margin: 5px 5px;
-}
-
-#reception h2 {
-  font-family: 'Great Vibes', cursive;
-  font-weight: 100;
-}
-
-p.line {
-  margin: 0px auto 20px auto;
-  color: #999;
-}
-
-.form input {
-  font-size: 15px;
-  color: #666;
-  padding: 6px;
-  margin: 25px auto 20px;
-  display: block;
-  width: 75%;  
-}
-
-input:focus {
-  outline: 0;
-}
-
-#reception .button button {
+/*iframe {
   display: inline-block;
-  width: 400px;
-}
-#reception button {
-  color: #666;
-  background-color: #ffbdc7;
-  border: none;
-  font-family: 'Raleway';
-  font-size: 18px;
-  font-weight: 600;
-  padding: 15px 32px;
-  width: 200px;
-  margin: 20px auto 0px auto; 
-  float:left;
-}
-
-button.accept {
-  border-radius: 0px 0px 0px 10px;
-  border-right: solid 1px #cc919a;
-}
-
-button.regret {
-  border-radius: 0px 0px 10px 0px;
-}
-
-#reception button:hover {
-  background-color: #cc919a;
-  transition: .5s;
-}
-
-#reception button:focus {
-  outline: 0;
-}
+  float: right;
+  margin-right: 10%;
+}*/
 
 
 /*-----------------------------------------------------footer----------------------------------------------------------------------*/
 footer{
   height: 60px;
-  background-color: #264356;
+  
   display: block;
   font-size: 18px;
-  color: white;
+  color: black;
+  background-color: #FAF6F3;
 }
 
-footer span{
-  padding: 20px;
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------- Responsive Design ------------------------------------------------------------------------------------------*/
+
+/*---------------------big screen-------------------------*/
+@media (min-width: 1025px) {
+  #caption_iPad{ display: none; }
+  #caption_iphone6Plus{display: none;}
 }
+
+
+
+
+/*ipad*/
+
+@media (min-width: 415px) and (max-width: 1024px) {
+  body{
+    width: 100%;
+  }
+  #caption{display: none;}
+  #caption_iphone6Plus{display: none;}
+
+  .carousel-inner{
+    height: 460px;
+  }
+  #caption_iPad {
+     height: 328px;
+  }
+  .h1Format {
+    display: block;
+    text-align: center;
+  }
+  #caption_iPad button {
+    width: 200px;
+    display: block;
+    margin-left: 280px;
+    margin-top: 20px;
+  }
+  
+
+  section#timeline article div.inner {
+  width: 70%;
+  float: right;
+  margin: 5px 50px 0 0;
+  border-radius: 6px;
+
+  }
+
+  section#timeline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    margin: 0 0 0 -1px;
+    width: 2px;
+    height: 100%;
+    background: #5A2883;
+  }
+  section#timeline article div.inner span.date {
+      position: absolute;
+    top: 0;
+    left: 10%;
+  }
+}
+
+/*-------------------------------------------------------------------iphone6Plus------------------------------*/
+@media (min-width: 376px) and (max-width: 414px){
+  #caption{ display: none;}
+  #caption_iPad{ display: none; } 
+  .carousel {
+    display: none
+  }  
+  #caption_iphone6Plus{
+    height: 736px;
+    width: 100%;
+    background-image: url("../img/6plusbg.png");
+  }
+  #caption_iphone6Plus .h1Format{
+    margin-top: 500px;
+  }
+  section#timeline article div.inner {
+  width: 70%;
+  float: right;
+  margin: 5px 20px 0 0;
+  border-radius: 6px;
+
+  }
+
+  section#timeline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    margin: 0 0 0 -1px;
+    width: 2px;
+    height: 100%;
+    background: #5A2883;
+  }
+  section#timeline article div.inner span.date {
+      position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  .timelineImg{
+  width: 40%;
+  height: auto;
+}
+}
+
+
+/*-----------------------------------------------------------iphone6------------------------------------------------*/
+@media (max-width: 375.5px){
+  #caption{ display: none;}
+  #caption_iPad{ display: none; }
+  .carousel {
+    display: none
+  }  
+  #caption_iphone6Plus{
+    height: 667px;
+    width: 375px;
+    background-image: url("../img/6bg.png");
+  }
+  #caption_iphone6Plus .h1Format{
+    margin-top: 420px;
+    font-size: 30px;
+    
+  }
+  section#timeline article div.inner {
+  width: 70%;
+  float: right;
+  margin: 5px 20px 0 0;
+  border-radius: 6px;
+
+  }
+
+  section#timeline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    margin: 0 0 0 -1px;
+    width: 2px;
+    height: 100%;
+    background: #5A2883;
+  }
+  section#timeline article div.inner span.date {
+      position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  .timelineImg{
+  width: 40%;
+  height: auto;
+  }
+}
+

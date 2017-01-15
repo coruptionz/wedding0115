@@ -23,6 +23,7 @@
 
     <!-- Font icons -->
     <script src="https://use.fontawesome.com/d4f26938c0.js"></script>
+    <script>async defer src ="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"</script>
   </head>
 
   <body>
@@ -75,9 +76,33 @@
     
   
   <div id="caption">
-    <span id="h1Format">Danny &amp Mian's Wedding: March 5th, 2017</span>
+    <span class="h1Format">Danny &amp Mian's Wedding: March 5th, 2017</span>
     <a class="buttonLink" href="#caption"><button type="button" class="btn btn-lg btn-primary" onclick="dropList()">Fairytale Starts Here</button>  </a>
   </div>
+
+  <div id="caption_iPad">
+    <span class="h1Format">Danny &amp Mian's Wedding</span> 
+    <span class="h1Format">March 5th, 2017</span>
+    <br>
+    <!-- Single button -->
+    <div class="btn-group">
+      <a href="#story"><button class="btn btn-lg btn-info" type="button">See Our Story</button></a> 
+      <a href="#reception"><button class="btn btn-lg btn-success " type="button">RSVP</button></a> 
+    </div>
+  </div>
+
+  <div id="caption_iphone6Plus">
+    <span>_</span>
+    <div class="h1Format"> Danny &amp Mian's Wedding <br>March 5th, 2017</div>
+    <br>
+    <!-- Single button -->
+    <div class="btn-group">
+      <a href="#story"><button class="btn btn-lg btn-info" type="button">See Our Story</button></a> 
+      <a href="#reception"><button class="btn btn-lg btn-success " type="button">RSVP</button></a> 
+    </div>
+  </div>
+
+
 
   <div id="navbg">
     <div id="navContent" class="invisible">
@@ -197,9 +222,9 @@
   </div>
   
 <div id="photo">
-  <h1>Photo Gallery</h1>
+  <h1><a href="photo/index.html">Photo Gallery</a></h1>
 
-<div class="component col-md-5 col-md-offset-4">
+  <div class="component col-md-5 col-md-offset-4">
 
 				<ul class="align">
 					<li>
@@ -245,35 +270,16 @@
 				</ul>
 	</div>
 
+  <h3 class="invisible"><a href="photo/index.html">View Photos</a></h3>
+</div>
 
+<div>
+  <h1>Reception Dinner</h1>
 </div>
     
-<div id="reception">
+<!-- 
 
-
- <div class="top">
-  </div>
-  <div class="form">
-    <div class ="info">
-    <h1>RSVP</h1>
-    <h2>for the wedding of</h2>
-    <h1>Danny & Mian</h1>
-      <p class= "line">________________________________________</p>
-      <h2>Save the Date</h2>
-      <p>Sunday, March 5, 2017</p>
-      <p>6:00 PM</p>
-      <br>
-      <h2>Reception Dinner</h2>
-      <p>Dynasty Seafood Restaurant</p>
-      <p>1001 Story Rd, San Jose, CA 95122</p>
-           <p class= "line">________________________________________</p>
-    <input type="text" placeholder="Name">
-    <input type="number" placeholder="# of Guests">
-    </div>
-    <button class ="accept">Accept</button>
-    <button class ="regret">Regret</button>
-  </div>
-</div>	  
+<iframe width="600" height="500" frameborder="0" scrolling="no" marginheight="5" src="https://maps.google.com/maps?q=1001 Story Rd, San Jose 95122, &t=&z=17&ie=UTF8&iwloc=&output=embed" marginwidth="0"><a class="addmaps" href="http://www.map-embed.com/wordpress-themes/business/"id="get-map-data" mce_href="http://maps.google.com/maps/api/js?sensor=false">map-embed.com</a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></iframe> -->
 
 <footer>
   <span class="col-md-5">Designed and Developed by Mian Wang</span>
