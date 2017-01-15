@@ -1,10 +1,11 @@
 body{
-	background-color: #FAF6F3;
+	background-color: lightblue;
 }
 h1 {
   padding-left: 20px;
 
 }
+
 
 /*<-----------------------------carouse--------------------------------
 ----------------->*/
@@ -654,7 +655,7 @@ footer{
   display: block;
   font-size: 18px;
   color: black;
-  background-color: #FAF6F3;
+  background-color: lightblue;
 }
 
 
