@@ -6,7 +6,6 @@ h1 {
 
 }
 
-
 /*<-----------------------------carouse--------------------------------
 ----------------->*/
 .carousel-inner .item{
@@ -631,34 +630,131 @@ figcaption {
 #photo{
   background-image: url("../img/albumbg.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   margin-top: 60px;
-  height: 600px;
+ 
+  height: 560px;
 }
 
 
 
 
 /*----------------------------------------------Reception-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#reception {
+height: 440px;
+width: 100%;
+margin: 0;
+padding: 0;
+background-color: mistyrose;
+font-family: 'Raleway';
+}
 
-/*iframe {
+.top {
+  background-color: mistyrose;
+  height: 0px;
+  margin:0;
+  padding:0;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+.form {
+  height: 400px;
+  width: 400px;
+  background-color: #fff;
+  margin: 0px auto;
+  border-radius: 10px;
+  color: #666;
+  padding: 0px 0px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+#reception .info {
+  padding: 10px;
+}
+
+#reception h1, 
+#reception h2, 
+#reception p {
+  text-align: center;
+  padding: 0px;
+  margin: 5px 5px;
+}
+
+#reception h2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 100;
+}
+
+p.line {
+  margin: 0px auto 20px auto;
+  color: #999;
+}
+
+.form input {
+  font-size: 15px;
+  color: #666;
+  padding: 6px;
+  margin: 25px auto 20px;
+  display: block;
+  width: 75%;  
+}
+
+input:focus {
+  outline: 0;
+}
+
+#reception button {
   display: inline-block;
-  float: right;
-  margin-right: 10%;
-}*/
+  width: 400px;
+}
+#reception button {
+  color: #666;
+  background-color: #ffbdc7;
+  border: none;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 32px;
+  width: 200px;
+  margin: 20px auto 0px auto; 
+  float:left;
+}
+
+button.accept {
+  border-radius: 0px 0px 0px 10px;
+  border-right: solid 1px #cc919a;
+}
+
+button.regret {
+  border-radius: 0px 0px 10px 0px;
+}
+
+#reception button:hover {
+  background-color: #cc919a;
+  transition: .5s;
+}
+
+#reception button:focus {
+  outline: 0;
+}
+
+.dynasty {
+  margin: 0px auto;
+}
 
 
 /*-----------------------------------------------------footer----------------------------------------------------------------------*/
 footer{
   height: 60px;
-  
+  background-color: slateblue;
   display: block;
   font-size: 18px;
-  color: black;
-  background-color: mistyrose;
+  color: white;
 }
 
-
+footer span{
+  padding: 20px;
+}
 
 
 /*-------------------------------------------------------------------------------------------------------------------------- Responsive Design ------------------------------------------------------------------------------------------*/
@@ -767,7 +863,10 @@ footer{
   .timelineImg{
   width: 40%;
   height: auto;
-}
+  }
+  .dynasty{
+    width: 414px;
+  }
 }
 
 
@@ -816,5 +915,7 @@ footer{
   width: 40%;
   height: auto;
   }
+  .dynasty{
+    width: 375px;
+  }
 }
-
